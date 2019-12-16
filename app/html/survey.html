@@ -14,6 +14,8 @@
 
 	<!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Passion+One&display=swap" rel="stylesheet">
 
 	<!-- Compiled and minified Materialize CSS -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
@@ -21,13 +23,14 @@
 	<!-- Compiled and minified Materialize JavaScript -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
           
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="./css/style.css">
 </head>
 <style>
 
 body {
-    width: 75%;
+    width: 100%;
    margin: 0px auto; 
+   background-color: linear-gradient(110.1598456064869deg, rgba(245, 196, 207,1) 6.140625%,rgba(66, 82, 183,1) 95.51562499999999%);
 
    display: flex;
    min-height: 100vh;
@@ -37,14 +40,21 @@ body {
 header {
     height: 100px;
     width: 100%;
+    margin-bottom: 20px;
+    font-family:'Quicksand', sans-serif;
 }
 
 header > nav {
     height: 100%;
 }
 
+.mainpanel {
+background: white;
+}
+
 main {
     flex: 1 0 auto;
+    background: linear-gradient(110.1598456064869deg, rgba(255, 226, 160,1) 26.436197916666664%,rgba(255, 115, 156,1) 95.51562499999999%)
 }
 
 main h1 {
@@ -79,17 +89,34 @@ main h1 {
     margin: 50px;
 }
 
+.accent-2 {
+    width: 100%;
+    background-color: rgb(250, 131, 131);
+}
+
+.accent-3 {
+    width: 100%;
+    background-color: rgb(250, 131, 131);
+    margin-top: 20px;
+}
+
+footer {
+    margin-top: 10px;
+    padding: 5px;
+    font-family: 'Quicksand', sans-serif;
+}
+
 </style>
 <body>
 	<header>
 		<nav>
-			<div class="nav-wrapper pink accent-2">
+			<div class="accent-2">
 				<i class="fa fa-address-book-o fa-5x" aria-hidden="true" id=logo-icon></i>
 				<a href="/" class="brand-logo" id="logo">Friend Finder</a>
 				<ul class="right hide-on-med-and-down" id="head-nav-links">
 					<li><a href="/survey">Survey</a></li>
 					<li><a href="/api/friends">API Friends List</a></li>
-					<li><a href="https://github.com/angrbrd/friend-finder">GitHub Repo</a></li>
+					<li><a href="#">GitHub Repo</a></li>
 				</ul>
 			</div>
 		</nav>
@@ -260,26 +287,24 @@ main h1 {
 		</div>
 	</main>
 
-	<footer class="page-footer pink accent-2">
+	<footer class="accent-2">
 		<div class="container">
 			<div class="row">
 				<div class="col l6 s12">
 					<h5 class="white-text">Friend Finder App</h5>
-					<p class="grey-text text-lighten-4">Thank you for taking the brief survey. Your responses will be used for training purposes only :-].</p>
+					
 				</div>
 				<div class="col l4 offset-l2 s12">
-					<h5 class="white-text">Links</h5>
 					<ul>
 						<li><a class="grey-text text-lighten-3" href="/api/friends">API Friends List</a></li>
-						<li><a class="grey-text text-lighten-3" href="https://github.com/angrbrd/friend-finder">GitHub Repo</a></li>
+						<li><a class="grey-text text-lighten-3" href="#"></a></li>
 					</ul>
 				</div>
 			</div>
 		</div>
 		<div class="footer-copyright">
 			<div class="container">
-				© 2017 angrbrd entertainment
-				<a class="grey-text text-lighten-4 right" href="https://github.com/angrbrd">Reference Work</a>
+				<a class="grey-text text-lighten-4 right" href="#"></a>
 			</div>
 		</div>
 	</footer>

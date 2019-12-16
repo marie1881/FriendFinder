@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Friend Finder Pro</title>
+	<title>Friend Finder</title>
 
 	<!-- Link to the jQuery Library -->
   	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
@@ -10,7 +10,7 @@
   	<script src="https://use.fontawesome.com/b38c8ed4c7.js"></script>
 
 	<!-- Link to reset stylesheet -->
-	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/reset.css"><link rel="stylesheet" href="./css/style.css">
 
 	<!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -21,11 +21,11 @@
 	<!-- Compiled and minified Materialize JavaScript -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
           
-	<link rel="stylesheet" href="css/style.css">
+	
 </head>
 <style>
 body {
-    width: 75%;
+    width: 100%;
    margin: 0px auto; 
 
    display: flex;
@@ -35,11 +35,12 @@ body {
 
 header {
     height: 100px;
-    width: 100%;
+    
 }
 
 header > nav {
     height: 100%;
+    width: 100%;
 }
 
 main {
@@ -78,12 +79,21 @@ main h1 {
     margin: 50px;
 }
 
+.accent-2 {
+    width: 100%;
+    background-color: rgb(250, 131, 131);
+}
+
+.accent-3 {
+    width: 100%;
+    background-color: rgb(250, 131, 131);
+}
 
 </style>
 <body>
 	<header>
 		<nav>
-			<div class="nav-wrapper pink accent-2">
+			<div class="accent-2">
 				<i class="fa fa-address-book-o fa-5x" aria-hidden="true" id=logo-icon></i>
 				<a href="/" class="brand-logo" id="logo">Friend Finder</a>
 				<ul class="right hide-on-med-and-down" id="head-nav-links">
@@ -115,7 +125,7 @@ main h1 {
 		</div>
 	</main>
 
-	<footer class="page-footer pink accent-2">
+	<footer class="accent-3">
 		<div class="container">
 			<div class="row">
 				<div class="col l6 s12">
