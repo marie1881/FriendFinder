@@ -1,23 +1,31 @@
-// Pull in required dependencies
-var express = require('express');
-var bodyParser = require('body-parser');
-var path = require('path');
+var express = require("express");
+var path = require("path");
 
-// Configure the Express application
+// Sets up the Express App
+// =============================================================
 var app = express();
-var PORT = process.env.PORT;
+var PORT = 3000;
+
+// Sets up the Express app to handle data parsing
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
 // Expose the public directory to access CSS files
-app.use(express.static(path.join(__dirname, './app/public')));
+app.use(express.static(path.join(__dirname, './app/html/css')));
 
 // Add middleware for parsing incoming request bodies
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.text());
+// app.get("/", function(req, res) {
+//     res.sendFile(path.join(__dirname, "home.html"));
+//   });
+  
+//   app.get("/add", function(req, res) {
+//     res.sendFile(path.join(__dirname, "survey.html"));
+//   });
+  
 
 // Add the application routes
-require(path.join(__dirname, './app/routing/apiRoutes'))(app);
-require(path.join(__dirname, './app/routing/htmlRoutes'))(app);
+require(path.join(__dirname, './app/routes/apiRoutes'))(app);
+require(path.join(__dirname, './app/routes/htmlRoutes'))(app);
 
 // Start listening on PORT
 app.listen(PORT, function() {
