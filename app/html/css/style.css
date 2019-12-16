@@ -34,7 +34,7 @@ main h1 {
 
 #logo {
     margin-left: 50px;
-    margin-top: 20px;
+    margin-top: 80px;
 }
 
 #head-nav-links {
@@ -44,8 +44,15 @@ main h1 {
 
 .mainpanel{
    margin: 50px;
+   margin-top: 50px;
+   margin-bottom: 60px;
 }
 
 #mainpanel-content {
     margin: 50px;
+}
+
+.accent-2 {
+    margin-top: 50px;
+   margin-bottom: 60px;
 }

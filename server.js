@@ -11,7 +11,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // Expose the public directory to access CSS files
-app.use(express.static(path.join(__dirname, './app/html/css')));
+app.use(express.static(path.join(__dirname, './app/html/css/style.css')));
 
 // Add middleware for parsing incoming request bodies
 // app.get("/", function(req, res) {
